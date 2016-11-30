@@ -3,3 +3,39 @@ body {
 	height: 100%;
 	background-color: #5f5f5f;
 }
+
+#articleContainer {
+	margin: 10px;
+	text-align: center;
+}
+
+.articleBox {
+	text-align: left;
+	margin-bottom: 5px;
+	width: 24%;
+	height: 250px;
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 3px;
+	border-color: #494949;
+	background-color: #bdbdbd;
+	display: inline-block;
+}
+
+@media screen and (max-width: 1500px) {
+	.articleBox{
+		width: 33%;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.articleBox{
+		width: 49%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.articleBox{
+		width: 100%;
+	}
+}
