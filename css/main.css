@@ -21,15 +21,34 @@ body {
 	background-color: #bdbdbd;
 	display: inline-block;
 }
+.articleBox:hover .articleBoxContent {
+	height: 244px;
+}
+
+a:link {
+	color: black;
+}
+a:visited {
+	color: black;
+}
+a:hover {
+	color: black;
+}
+a:active {
+	color: black;
+}
 
 .articleBoxContent {
+	position: absolute;
 	height: 45px;
-	width: 100%;
+	width: 100px;
 	padding: 5px;
 	background-color: rgba(220, 220, 220, 0.7);
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+	transition:height 0.3s; 
+    -webkit-transition:height 0.3s;
 }
 
 .articleBox h4 {
