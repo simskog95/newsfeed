@@ -12,9 +12,7 @@ function resizeArticleContent() {
 function addArticleToDom(obj) {
 	//generate html code and svae in a varible
 	//<a href="#"><div class="articleBox" style="background-image: url('imageLink'); background-size: cover;"><div class="articleBoxContent"><h4>header here</h4>content here<footer>date here</footer></div></div></a>
-	out = "<a href='" + obj.hyperLink + "'><div class='articleBox' style='background-image: url(" + obj.imageLink
-	+ "); background-size: cover;'><div class='articleBoxContent'><h4>" + obj.head + 
-	"</h4>" + obj.content + "<footer>" + obj.date + "</footer></div></a>";
+	out = "<a href='" + obj.hyperLink + "'><div class='articleBox' style='background-image: url("+"\""+ obj.imageLink +"\""+"); background-size: cover;'><div class='articleBoxContent'><h4>" + obj.head + "</h4>" + obj.content + "<footer>" + obj.date + "</footer></div></a\n";
 	
 	document.getElementById("articleContainer").innerHTML += out;
 }
