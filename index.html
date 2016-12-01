@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8" /> 
 	<!-- link css files-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
 	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!--link sripts-->
+	<script src="js/articles.js"></script>
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
 	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa", crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
 
 </head>
-<body>
+<body onload="initiateSite()">
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -22,11 +24,11 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" onclick="loadNews('home');"  href="#">NewsFeed</a>
+				<a class="navbar-brand" onclick="loadHome();"  href="#">NewsFeed</a>
 			</div>
 			<div class="collapse navbar-collapse" id="navbar">
 				<ul class="nav navbar-nav">
-					<li onclick="loadNews('home')"><a href="#">HOME</a></li>
+					<li onclick="loadHome()"><a href="#">HOME</a></li>
 					<li class="active" onclick="loadNews('tech')"><a href="#">TECH</a></li>
 					<li onclick="loadNews('science')"><a href="#">SCIENCE</a></li>
 					<li onclick="loadNews('health')"><a href="#">HEALTH</a></li>
@@ -37,16 +39,6 @@
 		</div>
 	</nav>
 	<div id="articleContainer">
-		<a href="#"><div class="articleBox" style="background-image: url('http://ichef.bbci.co.uk/news/624/cpsprodpb/7DD9/production/_92271223_289d8226-4f39-48cc-b09e-f14ae6332381.jpg'); background-size: cover;"><div class="articleBoxContent"><h4>header here</h4>content here<footer>date here</footer></div></div></a>
-		<div class="articleBox"><div class="articleBoxContent"><h4>this is a test.</h4>this is where the content goes.<footer>2016-11-30</footer></div></div>
-		<div class="articleBox"><div class="articleBoxContent"><h4>this is a test.</h4>this is where the content goes.<footer>2016-11-30</footer></div></div>
-		<div class="articleBox"><div class="articleBoxContent"><h4>this is a test.</h4>this is where the content goes.<footer>2016-11-30</footer></div></div>
-		<div class="articleBox"><div class="articleBoxContent"><h4>this is a test.</h4>this is where the content goes.<footer>2016-11-30</footer></div></div>
-		<div class="articleBox"><div class="articleBoxContent"><h4>this is a test.</h4>this is where the content goes.<footer>2016-11-30</footer></div></div>
-		<div class="articleBox"><div class="articleBoxContent"><h4>this is a test.</h4>this is where the content goes.<footer>2016-11-30</footer></div></div>
-		<div class="articleBox"><div class="articleBoxContent"><h4>this is a test.</h4>this is where the content goes.<footer>2016-11-30</footer></div></div>
-		<div class="articleBox"><div class="articleBoxContent"><h4>this is a test.</h4>this is where the content goes.<footer>2016-11-30</footer></div></div>
-		<div class="articleBox"><div class="articleBoxContent"><h4>this is a test.</h4>this is where the content goes.<footer>2016-11-30</footer></div></div>
 	</div>
 </body>
 </html>
